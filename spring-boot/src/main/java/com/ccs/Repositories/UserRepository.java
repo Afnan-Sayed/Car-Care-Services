@@ -1,5 +1,11 @@
 package com.ccs.Repositories;
 
-// findByEmail(), existsByEmail()
-public class UserRepository {
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.ccs.Models.Customer;
+import com.ccs.Models.User;
+public interface UserRepository extends JpaRepository<User, Integer> {
+    Optional<User> findByEmail(String email);
 }
