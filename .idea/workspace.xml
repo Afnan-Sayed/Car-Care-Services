@@ -4,61 +4,50 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e80e73e-75df-4197-99f6-470024f3fd7a" name="Changes" comment="">
+    <list default="true" id="0e1f77e5-9790-4f7f-bd6c-bc42bf2daf19" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Controllers/PasswordResetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Controllers/PasswordResetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/PasswordResetToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/PasswordResetToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Services/PasswordResetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Services/PasswordResetService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Configurations/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Configurations/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Afnan-Sayed"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Afnan-Sayed&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Afnan-Sayed/Car-Care-Services",
-    "accountId": "46912987-a4c0-428e-b3a9-417ea2af14d8"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Afnan-Sayed/Car-Care-Services&quot;,
+    &quot;accountId&quot;: &quot;46912987-a4c0-428e-b3a9-417ea2af14d8&quot;
   }
-}]]></component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
-  <component name="ProjectId" id="31edDkhIuEXQ4ffpnmRsq55wM0u" />
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="31goLV9WjKZXVpl91W8PiTI5dd0" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.CarCareServicesApplication.executor": "Run",
     "git-widget-placeholder": "reset-password",
     "ignore.virus.scanning.warn.message": "true",
@@ -67,10 +56,6 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -94,12 +79,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3e80e73e-75df-4197-99f6-470024f3fd7a" name="Changes" comment="" />
-      <created>1755888354723</created>
+      <changelist id="0e1f77e5-9790-4f7f-bd6c-bc42bf2daf19" name="Changes" comment="" />
+      <created>1755955020864</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1755888354723</updated>
-      <workItem from="1755888355896" duration="8793000" />
+      <updated>1755955020864</updated>
+      <workItem from="1755955022059" duration="4005000" />
+      <workItem from="1755972870246" duration="1195000" />
     </task>
     <servers />
   </component>
