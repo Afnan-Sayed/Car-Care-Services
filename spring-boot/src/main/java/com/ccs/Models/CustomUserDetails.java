@@ -11,11 +11,13 @@ import java.util.List;
 public class CustomUserDetails implements UserDetails {
 
     private final String username;
+    private final String email;
     private final String password;
     private final List<GrantedAuthority> authorities;
 
     public CustomUserDetails(User user) {
         this.username = user.getUsername();
+        this.email = user.getEmail();
         this.password = user.getPassword();
         this.authorities = Collections.singletonList(new SimpleGrantedAuthority(user.getRole().name()));
     }
@@ -33,6 +35,10 @@ public class CustomUserDetails implements UserDetails {
     @Override
     public String getUsername() {
         return username;
+    }
+
+    public String getEmail() {
+        return email;
     }
 
     @Override

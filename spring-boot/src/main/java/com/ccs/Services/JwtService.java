@@ -17,9 +17,18 @@ import java.util.function.Function;
 public class JwtService {
 
     private String secretKey;
+    private final Set<String> blacklistedTokens = new HashSet<>();
+
     @Value("${jwt.secret}")
     public void setSecretKey(String secretKey) {
         this.secretKey = secretKey;
+    }
+
+    public void blacklistToken(String token) {
+        blacklistedTokens.add(token);
+    }
+    public boolean isTokenBlacklisted(String token) {
+        return blacklistedTokens.contains(token);
     }
 
     public String generateToken(UserDetails userDetails) {
