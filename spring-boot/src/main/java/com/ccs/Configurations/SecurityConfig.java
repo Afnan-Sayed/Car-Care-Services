@@ -37,8 +37,8 @@ public class SecurityConfig {
         http
                 .csrf(CsrfConfigurer::disable)
                 .authorizeHttpRequests( auth->auth
-                        .requestMatchers("/login").permitAll()
-                        .requestMatchers("/signup").permitAll()
+                        .requestMatchers("/auth/signup/**").permitAll()
+                        .requestMatchers("/auth/login/**").permitAll()
                         .requestMatchers("/customer/**").hasRole("CUSTOMER")
                         .requestMatchers("/provider/**").hasRole("PROVIDER")
                         .requestMatchers("/admin/**").hasRole("ADMIN")
