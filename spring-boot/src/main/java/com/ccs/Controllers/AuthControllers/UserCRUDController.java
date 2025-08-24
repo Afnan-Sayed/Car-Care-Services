@@ -1,4 +1,4 @@
-package com.ccs.Controllers.UserControllers;
+package com.ccs.Controllers.AuthControllers;
 /*
 Ahmed
 Epic 2: User APIs (Admin manage user profiles)
@@ -6,5 +6,5 @@ Epic 2: User APIs (Admin manage user profiles)
 •	PUT /users/{id}
 •	DELETE /users/{id}
  */
-public class UserManagementController {
+public class UserCRUDController {
 }
