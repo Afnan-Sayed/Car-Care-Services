@@ -3,7 +3,7 @@ package com.ccs.Services.UserAndPubAuthService;
 import com.ccs.Models.PasswordResetToken;
 import com.ccs.Models.User;
 import com.ccs.Repository.PasswordResetTokenRepository;
-import com.ccs.Repository.UserRepository;
+import com.ccs.Repository.UserRepo;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -13,11 +13,11 @@ import java.util.UUID;
 @Service
 public class PasswordResetService
 {
-    private final UserRepository userRepository;
+    private final UserRepo userRepository;
     private final PasswordResetTokenRepository tokenRepository;
     private final PasswordEncoder passwordEncoder;
 
-    public PasswordResetService(UserRepository userRepository,
+    public PasswordResetService(UserRepo userRepository,
                                 PasswordResetTokenRepository tokenRepository,
                                 PasswordEncoder passwordEncoder)
     {
@@ -77,5 +77,7 @@ public class PasswordResetService
 
         //delete token after use
         tokenRepository.deleteById(tokenRepository.findByToken(token).get().getId());
+
+
     }
 }

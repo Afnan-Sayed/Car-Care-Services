@@ -5,42 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc88ddee-34b9-4536-8e43-5ebeb777f8be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Controllers/AuthControllers/GeneralUserAuth/PasswordResetController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/DTOs/ForgotPasswordRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/DTOs/ProviderSignupRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/DTOs/ResetPasswordRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/DTOs/VerifyCodeRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/PasswordResetToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/ProviderDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Repository/PasswordResetTokenRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Repository/ProviderDetailsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Repository/ProviderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Services/UserAndPubAuthService/PasswordResetService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/resources/data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Configurations/PasswordEncoderConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Configurations/PasswordEncoderConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Configurations/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Configurations/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Controllers/AuthControllers/GeneralUserAuth/AccessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Controllers/AuthControllers/GeneralUserAuth/AccessController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Controllers/AuthControllers/GeneralUserAuth/ResetPasswordController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/Provider.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/Provider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/CarCareServicesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/CarCareServicesApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Repository/ProviderRepo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Services/UserAndPubAuthService/UserAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Services/UserAndPubAuthService/UserAuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Services/UserAndPubAuthService/PasswordResetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Services/UserAndPubAuthService/PasswordResetService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Configurations/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Configurations/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Controllers/AuthControllers/GeneralUserAuth/AccessController.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Controllers/AuthControllers/GeneralUserAuth/AccessController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Models/Admin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Models/CustomUserDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Models/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Models/Provider.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Models/Provider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Models/User$Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Models/User$Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Models/User$Role.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Services/UserAndPubAuthService/UserAuthService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Services/UserAndPubAuthService/PasswordResetService.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Services/UserAndPubAuthService/PasswordResetService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +60,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Merging test-supcust-jwt-access",
+    "git-widget-placeholder": "test-supcust-jwt-access",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
