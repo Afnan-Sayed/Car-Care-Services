@@ -1,15 +1,20 @@
 package com.ccs.Models;
-// inherit from User (extra: verification_status, lat, long, national_id_image).
 
 import jakarta.persistence.*;
+        import lombok.*;
 
+@Data
+@NoArgsConstructor
 @Entity
-@DiscriminatorValue("provider")  // Matches role
+@Table(name = "Providers")
 public class Provider extends User {
-    public Provider() {
-    }
-
-    public Provider(String username, String password, String email, String phone) {
-        super(username, password, email, phone);
+        public Provider(String username, String password, String email, String phone) {
+        super();
+        setUsername(username);
+        setPassword(password);
+        setEmail(email);
+        setPhone(phone);
+        setRole(Role.ROLE_PROVIDER);
     }
 }
+
