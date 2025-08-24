@@ -1,4 +1,4 @@
-package com.ccs.Controllers.NotificationsControllers;
+package com.ccs.Services.NotificationService;
 /*
 Kareem
 Epic 9: Notifications APIs
@@ -6,5 +6,5 @@ Epic 9: Notifications APIs
 •	POST /notifications
 •	PUT /notifications/{id}/read
  */
-public class NotificationsController {
+public class NotificationService {
 }
