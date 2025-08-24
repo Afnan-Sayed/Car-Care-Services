@@ -1,4 +1,4 @@
-package com.ccs.DTOs;
+package com.ccs.Models.DTOs;
 import com.ccs.Models.Provider;
 
 

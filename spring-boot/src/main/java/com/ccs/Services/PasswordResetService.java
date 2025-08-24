@@ -29,8 +29,12 @@ public class PasswordResetService
     //generate and send reset token
     public void forgotPassword(String email)
     {
-        User user = userRepository.findByEmail(email).orElseThrow(() ->
-                new RuntimeException("User not found"));
+        User user = userRepository.findByEmail(email).orElseThrow(() -> {
+            System.out.println("User NOT found with email: " + email);
+            return new RuntimeException("User not found");
+        });
+
+        System.out.println("User found: ID=" + user.getId() + ", Email=" + user.getEmail());
 
         String token = UUID.randomUUID().toString();
 
@@ -47,7 +51,11 @@ public class PasswordResetService
     public boolean verifyToken(String token, String email)
     {
         PasswordResetToken resetToken = tokenRepository.findByToken(token)
-                .orElseThrow(() -> new RuntimeException("Invalid token"));
+                .orElseThrow(() -> {
+                    System.out.println("Token expired");
+                    return new RuntimeException("Token expired");
+                });
+
 
         if (resetToken.getExpiryDate().isBefore(LocalDateTime.now()))
             { throw new RuntimeException("Token expired");}

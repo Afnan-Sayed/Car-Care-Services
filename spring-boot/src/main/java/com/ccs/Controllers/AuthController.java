@@ -1,17 +1,14 @@
 package com.ccs.Controllers;
 
-import com.ccs.DTOs.ProviderSignupRequestDTO;
+import com.ccs.Models.DTOs.ProviderSignupRequestDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ccs.Models.*;
 import com.ccs.Services.AuthService;
-import jakarta.security.auth.message.callback.SecretKeyCallback.Request;
 
 //POST /signup/customer → call authService.signupCustomer()
 //POST /signup/provider → call authService.signupProvider()
