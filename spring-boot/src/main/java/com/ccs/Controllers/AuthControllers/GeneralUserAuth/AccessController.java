@@ -2,6 +2,7 @@ package com.ccs.Controllers.AuthControllers.GeneralUserAuth;
 
 import com.ccs.Models.ApiResponse;
 import com.ccs.Models.Customer;
+import com.ccs.Models.DTOs.ProviderSignupRequestDTO;
 import com.ccs.Models.LoginRequest;
 import com.ccs.Models.LoginResponse;
 import com.ccs.Services.UserAndPubAuthService.UserAuthService;
@@ -73,5 +74,21 @@ POST signup/customer
 Kareem
 •Epic 1:	signup provider
  */
+
+    @PostMapping("/signup/provider")
+    public ResponseEntity<?> signupProvider(@RequestBody ProviderSignupRequestDTO request) {
+        boolean success = authService.signupProvider(
+                request.getProvider(),
+                request.getVerificationStatus(),
+                request.getLocationLat(),
+                request.getLocationLong(),
+                request.getNationalIdImage()
+        );
+        if (success) {
+            return ResponseEntity.ok("Provider registered successfully");
+        } else {
+            return ResponseEntity.badRequest().body("Error registering provider");
+        }
+    }
 
 }

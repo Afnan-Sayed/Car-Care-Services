@@ -4,63 +4,115 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aceff619-7ad4-4be6-8b23-7a3a9e98d5df" name="Changes" comment="" />
+    <list default="true" id="bc88ddee-34b9-4536-8e43-5ebeb777f8be" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Controllers/AuthControllers/GeneralUserAuth/PasswordResetController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/DTOs/ForgotPasswordRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/DTOs/ProviderSignupRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/DTOs/ResetPasswordRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/DTOs/VerifyCodeRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/PasswordResetToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/ProviderDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Repository/PasswordResetTokenRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Repository/ProviderDetailsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Repository/ProviderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Services/UserAndPubAuthService/PasswordResetService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Configurations/PasswordEncoderConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Configurations/PasswordEncoderConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Configurations/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Configurations/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Controllers/AuthControllers/GeneralUserAuth/AccessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Controllers/AuthControllers/GeneralUserAuth/AccessController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Controllers/AuthControllers/GeneralUserAuth/ResetPasswordController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/Provider.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/Provider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Repository/ProviderRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Services/UserAndPubAuthService/UserAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Services/UserAndPubAuthService/UserAuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Configurations/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Configurations/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Controllers/AuthControllers/GeneralUserAuth/AccessController.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Controllers/AuthControllers/GeneralUserAuth/AccessController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Models/Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Models/CustomUserDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Models/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Models/Provider.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Models/Provider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Models/User$Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Services/UserAndPubAuthService/UserAuthService.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Afnan-Sayed"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Afnan-Sayed&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Afnan-Sayed/Car-Care-Services",
-    "accountId": "9861a2c5-7f63-4c14-94df-e49f1e4c06fd"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Afnan-Sayed/Car-Care-Services&quot;,
+    &quot;accountId&quot;: &quot;9861a2c5-7f63-4c14-94df-e49f1e4c06fd&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
-  <component name="ProjectId" id="31jZK2030LuuWvgehUTXuCSxK8a" />
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="31kLwIXyyklJtx3QT8JnqIV3rZy" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.CarCareServicesApplication.executor": "Run",
-    "last_opened_file_path": "C:/Users/afnan/IdeaProjects/Car-Care-Services/spring-boot/src/main/java/com/ccs/Repositories"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "Merging test-supcust-jwt-access",
+    "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\afnan\IdeaProjects\Car-Care-Services\spring-boot\src\main\java\com\ccs\Repositories" />
-      <recent name="C:\Users\afnan\IdeaProjects\Car-Care-Services\spring-boot\src\main\java\com\ccs\Services" />
-    </key>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="aceff619-7ad4-4be6-8b23-7a3a9e98d5df" name="Changes" comment="" />
-      <created>1756039374988</created>
+      <changelist id="bc88ddee-34b9-4536-8e43-5ebeb777f8be" name="Changes" comment="" />
+      <created>1756063361022</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1756039374988</updated>
+      <updated>1756063361022</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/test-supcust-jwt-access" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
