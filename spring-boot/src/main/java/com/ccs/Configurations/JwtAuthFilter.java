@@ -1,7 +1,6 @@
 package com.ccs.Configurations;
 
-import com.ccs.Services.AuthService;
-import com.ccs.Services.JwtService;
+import com.ccs.Services.UserAndPubAuthService.JwtService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

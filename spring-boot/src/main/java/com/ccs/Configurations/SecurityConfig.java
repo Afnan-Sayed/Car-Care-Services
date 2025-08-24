@@ -1,6 +1,7 @@
 package com.ccs.Configurations;
 
-import com.ccs.Services.CustomUserDetailsService;
+
+import com.ccs.Services.UserAndPubAuthService.CustomUserDetailsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
