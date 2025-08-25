@@ -1,7 +1,6 @@
 package com.ccs.Services.UserAndPubAuthService;
 
 import com.ccs.Models.*;
-import com.ccs.Repository.ProviderDetailsRepository;
 import com.ccs.Repository.CustomerRepo;
 import com.ccs.Repository.UserRepo;
 import lombok.RequiredArgsConstructor;
@@ -94,35 +93,4 @@ signup customer
 
 /// //////////////////////////
 
-/*
-Kareem
-signup provider
-*/
-
-    @Autowired
-    private ProviderDetailsRepository providerDetailsRepository;
-
-    public boolean signupProvider(@RequestBody Provider request, String verificationStatus, Float locationLat, Float locationLong, String nationalIdImage) {
-        // Validate email
-        if (request.getEmail() == null || userRepository.findByEmail(request.getEmail()).isPresent()) {
-            System.out.println("Email is already taken");
-            return false;
-        }
-
-        // Create Provider entity
-        Provider provider = new Provider();
-        provider.setUsername(request.getUsername());
-        provider.setPassword(new BCryptPasswordEncoder().encode(request.getPassword()));
-        provider.setEmail(request.getEmail());
-        provider.setPhone(request.getPhone());
-
-        // Save Provider to users table
-        User savedUser = userRepository.save(provider);
-
-        // Create and save ProviderDetails to providers table
-        ProviderDetails providerDetails = new ProviderDetails(savedUser, verificationStatus, locationLat, locationLong, nationalIdImage);
-        providerDetailsRepository.save(providerDetails);
-
-        return true;
-    }
 }
