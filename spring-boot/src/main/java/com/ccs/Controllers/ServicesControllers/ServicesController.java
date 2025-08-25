@@ -11,6 +11,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
+
+import javax.swing.text.html.parser.Entity;
 /*
 Maya
 •  Epic 6: Service APIs
@@ -39,9 +41,11 @@ public class ServicesController {
         if (servicesRepo.findByName(service.getName()) != null) {
             return ResponseEntity.badRequest().body("Service with name " + service.getName() + " already exists");
         }
-        if (service.getPricingType() == null) {
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST)
-                .body("pricingType must be one of: FIXED, PER_KM, PER_CAR_TYPE");
+        if(service.getCarType() == null ) {
+            return ResponseEntity.badRequest().body("carType should be one of: PRIVATE_CAR, BUS, TRUCK, MOTORCYCLE");
+        }
+        if(service.getPrice() == null) {
+            return ResponseEntity.badRequest().body("price must not be null");
         }
         servicesManagementService.createService(service);
         return ResponseEntity.ok("Service created successfully");
