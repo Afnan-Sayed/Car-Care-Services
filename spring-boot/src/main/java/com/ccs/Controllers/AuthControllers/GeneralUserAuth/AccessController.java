@@ -6,6 +6,7 @@ import com.ccs.Models.DTOs.ProviderSignupRequestDTO;
 import com.ccs.Models.LoginRequest;
 import com.ccs.Models.LoginResponse;
 import com.ccs.Services.UserAndPubAuthService.UserAuthService;
+import com.ccs.Services.ProviderService.ProviderAuthService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -23,6 +24,9 @@ import org.springframework.web.bind.annotation.*;
 public class AccessController {
     @Autowired
     private UserAuthService authService;
+
+    @Autowired
+    private ProviderAuthService providerAuthService;
 
 /*
 Ahmed
@@ -76,19 +80,11 @@ Kareem
  */
 
     @PostMapping("/signup/provider")
-    public ResponseEntity<?> signupProvider(@RequestBody ProviderSignupRequestDTO request) {
-        boolean success = authService.signupProvider(
-                request.getProvider(),
-                request.getVerificationStatus(),
-                request.getLocationLat(),
-                request.getLocationLong(),
-                request.getNationalIdImage()
-        );
-        if (success) {
-            return ResponseEntity.ok("Provider registered successfully");
-        } else {
-            return ResponseEntity.badRequest().body("Error registering provider");
-        }
+    public ResponseEntity<String> signupProvider(@RequestBody ProviderSignupRequestDTO request) {
+        boolean success = providerAuthService.signupProvider(request);
+
+        return success ? ResponseEntity.ok("Provider registered successfully")
+                : ResponseEntity.badRequest().body("Signup failed: Email or username already exists");
     }
 
 }
