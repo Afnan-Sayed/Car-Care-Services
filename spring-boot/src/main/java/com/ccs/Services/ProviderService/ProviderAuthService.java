@@ -3,8 +3,8 @@ package com.ccs.Services.ProviderService;
 import com.ccs.Models.Provider;
 import com.ccs.Models.User;
 import com.ccs.Models.DTOs.ProviderSignupRequestDTO;
-import com.ccs.Repositories.ProviderRepository;
-import com.ccs.Repositories.UserRepository;
+import com.ccs.Repository.ProviderRepo;
+import com.ccs.Repository.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -22,41 +22,40 @@ Epic 4:
 public class ProviderAuthService {
 
     @Autowired
-    private ProviderRepository providerRepository;
+    private ProviderRepo providerRepo;
 
     @Autowired
-    private UserRepository userRepository;
+    private UserRepo userRepo;
 
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    public boolean signupProvider(ProviderSignupRequestDTO req) {
-        if (req.getEmail() == null || userRepository.findByEmail(req.getEmail()).isPresent()) {
+    public boolean signupProvider(ProviderSignupRequestDTO request) {
+        if (request.getEmail() == null || userRepo.findByEmail(request.getEmail()).isPresent()) {
             System.out.println("Email is already taken");
             return false;
         }
 
-        if (req.getUsername() == null || userRepository.existsByUsername(req.getUsername())) {
+        if (request.getUsername() == null || userRepo.existsByUsername(request.getUsername())) {
             System.out.println("Username is already taken");
             return false;
         }
 
         Provider provider = new Provider();
-        provider.setUsername(req.getUsername());
-        provider.setPassword(passwordEncoder.encode(req.getPassword()));
-        provider.setEmail(req.getEmail());
-        provider.setPhone(req.getPhone());
+        provider.setUsername(request.getUsername());
+        provider.setPassword(passwordEncoder.encode(request.getPassword()));
+        provider.setEmail(request.getEmail());
+        provider.setPhone(request.getPhone());
         provider.setRole(User.Role.ROLE_PROVIDER);
 
         // Set provider-specific fields
         provider.setVerificationStatus("PENDING");
-        provider.setLocationLat(req.getLocationLat());
-        provider.setLocationLong(req.getLocationLong());
-        provider.setNationalIdImage(req.getNationalIdImage());
+        provider.setLocationLat(request.getLocationLat());
+        provider.setLocationLong(request.getLocationLong());
+        provider.setNationalIdImage(request.getNationalIdImage());
 
         // Save
-        providerRepository.save(provider);
+        providerRepo.save(provider);
         return true;
     }
 }
-

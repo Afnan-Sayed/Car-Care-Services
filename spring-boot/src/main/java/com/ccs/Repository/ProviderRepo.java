@@ -12,7 +12,7 @@ findById, update, getServices, addService, updateService, deleteService
 
 
 @Repository
-public interface ProviderRepository extends JpaRepository<Provider, Long> {
+public interface ProviderRepo extends JpaRepository<Provider, Long> {
     Optional<Provider> findByUsername(String username);
     Optional<Provider> findByEmail(String email);
     boolean existsByUsername(String username);

@@ -33,22 +33,9 @@ public class AccessController {
     // ✅ Provider Sign-Up
     @PostMapping("/signup/provider")
     public ResponseEntity<String> signupProvider(@RequestBody ProviderSignupRequestDTO request) {
-        User user = new User();
-        user.setUsername(request.getUsername());
-        user.setPassword(request.getPassword());
-        user.setEmail(request.getEmail());
-        user.setPhone(request.getPhone());
-
-        boolean success = providerAuthService.signupProvider(
-                user,
-                request.getVerificationStatus(),
-                request.getLocationLat(),
-                request.getLocationLong(),
-                request.getNationalIdImage()
-        );
+        boolean success = providerAuthService.signupProvider(request);
 
         return success ? ResponseEntity.ok("Provider registered successfully")
                 : ResponseEntity.badRequest().body("Signup failed: Email or username already exists");
     }
 }
-
