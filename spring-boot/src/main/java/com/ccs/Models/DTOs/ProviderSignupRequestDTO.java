@@ -4,7 +4,6 @@ import com.ccs.Models.Provider;
 
 public class ProviderSignupRequestDTO {
     private Provider provider;
-    private String verificationStatus;
     private Float locationLat;
     private Float locationLong;
     private String nationalIdImage;
@@ -16,14 +15,6 @@ public class ProviderSignupRequestDTO {
 
     public void setProvider(Provider provider) {
         this.provider = provider;
-    }
-
-    public String getVerificationStatus() {
-        return verificationStatus;
-    }
-
-    public void setVerificationStatus(String verificationStatus) {
-        this.verificationStatus = verificationStatus;
     }
 
     public Float getLocationLat() {
