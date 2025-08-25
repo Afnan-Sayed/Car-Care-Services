@@ -22,7 +22,7 @@ public class UserCRUDController {
     @Autowired
     private UserManagementService userManagementService;
 
-    // GET /users - Get all users
+    // get all users
     @GetMapping
     public ResponseEntity<ApiResponse<List<User>>> getAllUsers() {
         try {
@@ -33,7 +33,7 @@ public class UserCRUDController {
         }
     }
 
-    // GET /users/{id}
+    // get user by id
     @GetMapping("/{id}")
     public ResponseEntity<ApiResponse<User>> getUserById(@PathVariable Long id) {
         try {
@@ -44,7 +44,7 @@ public class UserCRUDController {
         }
     }
 
-    // PUT /users/{id}
+    // put user
     @PutMapping("/{id}")
     public ResponseEntity<ApiResponse<User>> updateUser(@PathVariable Long id, @RequestBody User userRequest) {
         try {
@@ -55,7 +55,7 @@ public class UserCRUDController {
         }
     }
 
-    // DELETE /users/{id}
+    // delete user by id
     @DeleteMapping("/{id}")
     public ResponseEntity<ApiResponse<String>> deleteUser(@PathVariable Long id) {
         try {

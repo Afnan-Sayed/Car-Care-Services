@@ -13,24 +13,25 @@ Epic 2: User APIs (Admin manage user profiles)
 •	PUT /users/{id}
 •	DELETE /users/{id}
  */
+
 @Service
 public class UserManagementService {
 
     @Autowired
     private UserRepo userRepository;
 
-    // GET /users - Get all users
+    // get all users
     public List<User> getAllUsers() {
         return userRepository.findAll();
     }
 
-    // GET /users/{id}
+    // get user by id
     public User getUserById(Long id) {
         return userRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("User not found with id: " + id));
     }
 
-    // PUT /users/{id}
+    // put user
     public User updateUser(Long id, User userRequest) {
         User existingUser = userRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("User not found with id: " + id));
@@ -52,7 +53,7 @@ public class UserManagementService {
         return userRepository.save(existingUser);
     }
 
-    // DELETE /users/{id}
+    // delete user by id
     public void deleteUser(Long id) {
         User user = userRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("User not found with id: " + id));
