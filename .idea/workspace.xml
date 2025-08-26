@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc88ddee-34b9-4536-8e43-5ebeb777f8be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Controllers/ProviderControllers/ProviderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Services/ProviderService/ProviderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="bc88ddee-34b9-4536-8e43-5ebeb777f8be" name="Changes" comment="•&#9;GET /providers/{id}&#10;•&#9;PUT /providers/{id}&#10;done">
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/ServiceDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Repository/ServiceDetailsRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Controllers/ProviderControllers/ProviderServicesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Controllers/ProviderControllers/ProviderServicesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Services/ProviderService/ProviderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Services/ProviderService/ProviderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Services/ProviderService/ProviderServicesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Services/ProviderService/ProviderServicesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,9 +56,18 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.CarCareServicesApplication.executor": "Run",
     "git-widget-placeholder": "epic4-9",
     "kotlin-language-version-configured": "true",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -68,6 +79,15 @@
       <option name="presentableId" value="Default" />
       <updated>1756063361022</updated>
     </task>
+    <task id="LOCAL-00001" summary="•&#9;GET /providers/{id}&#10;•&#9;PUT /providers/{id}&#10;done">
+      <option name="closed" value="true" />
+      <created>1756163504013</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1756163504013</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -81,7 +101,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/test-supcust-jwt-access" />
+                        <option value="origin/Services" />
                       </list>
                     </value>
                   </entry>
@@ -92,5 +112,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="•&#9;GET /providers/{id}&#10;•&#9;PUT /providers/{id}&#10;done" />
+    <option name="LAST_COMMIT_MESSAGE" value="•&#9;GET /providers/{id}&#10;•&#9;PUT /providers/{id}&#10;done" />
   </component>
 </project>

@@ -25,7 +25,6 @@ public class ProviderService {
             return null;
         }
         Provider provider = optionalProvider.get();
-        // Update fields from DTO
         provider.setUsername(providerDetails.getUsername());
         provider.setPassword(providerDetails.getPassword());
         provider.setEmail(providerDetails.getEmail());
@@ -33,7 +32,6 @@ public class ProviderService {
         provider.setLocationLat(providerDetails.getLocationLat());
         provider.setLocationLong(providerDetails.getLocationLong());
         provider.setNationalIdImage(providerDetails.getNationalIdImage());
-        // ...update other fields as needed...
         return providerRepository.save(provider);
     }
 }
