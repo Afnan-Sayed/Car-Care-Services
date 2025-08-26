@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc88ddee-34b9-4536-8e43-5ebeb777f8be" name="Changes" comment="•&#9;GET /providers/{id}&#10;•&#9;PUT /providers/{id}&#10;done">
-      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/ServiceDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Repository/ServiceDetailsRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Controllers/ProviderControllers/ProviderServicesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Controllers/ProviderControllers/ProviderServicesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Services/ProviderService/ProviderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Services/ProviderService/ProviderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Services/ProviderService/ProviderServicesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Services/ProviderService/ProviderServicesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Controllers/NotificationsControllers/NotificationsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Controllers/NotificationsControllers/NotificationsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/Notification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Repository/NotificationsRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Repository/NotificationsRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Services/NotificationService/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Services/NotificationService/NotificationService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +25,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="epic4-9" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -53,6 +56,10 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.CarCareServicesApplication.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
