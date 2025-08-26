@@ -5,6 +5,7 @@ import com.ccs.Services.UserAndPubAuthService.CustomUserDetailsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
@@ -35,6 +36,10 @@ public class SecurityConfig {
                 .requestMatchers("/provider/**").hasRole("PROVIDER")
                 .requestMatchers("/admin/**").hasRole("ADMIN")
                 .requestMatchers("/user/**").hasAnyRole("CUSTOMER", "PROVIDER", "ADMIN")
+                .requestMatchers(HttpMethod.GET, "/services").permitAll()
+                .requestMatchers(HttpMethod.POST, "/services").hasRole("ADMIN")
+                .requestMatchers(HttpMethod.DELETE, "/services").hasRole("ADMIN")
+                .requestMatchers(HttpMethod.PUT, "/services").hasRole("ADMIN")
                 .anyRequest().authenticated()
             )
             .sessionManagement(session -> session
