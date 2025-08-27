@@ -41,6 +41,8 @@ public class SecurityConfig {
                 .requestMatchers(HttpMethod.POST, "/services").hasRole("ADMIN")
                 .requestMatchers(HttpMethod.DELETE, "/services").hasRole("ADMIN")
                 .requestMatchers(HttpMethod.PUT, "/services").hasRole("ADMIN")
+                .requestMatchers(HttpMethod.POST, "/admin/customers/{id}/enable").hasRole("ADMIN")
+                .requestMatchers(HttpMethod.POST, "/admin/customers/{id}/disable").hasRole("ADMIN")
                 .anyRequest().authenticated()
             )
             .sessionManagement(session -> session

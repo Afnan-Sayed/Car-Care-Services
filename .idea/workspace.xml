@@ -6,16 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="bc88ddee-34b9-4536-8e43-5ebeb777f8be" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Configurations/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Configurations/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Controllers/AdminControllers/CustomerManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Controllers/AdminControllers/CustomerManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/TokenBlacklist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Services/AdminService/AdminAuthService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Services/AdminService/CustomerManagementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Services/AdminService/CustomerManagementService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Configurations/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Configurations/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Controllers/AuthControllers/UserCRUDController.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Controllers/AuthControllers/UserCRUDController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Controllers/CustomerControllers/CustomerCarsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Controllers/CustomerControllers/CustomerCarsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Models/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Models/Car.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Repository/CarRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Repository/CarRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Services/CustomerService/CustomerCarService.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Services/CustomerService/CustomerCarService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Services/CustomerService/CustomerCarsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Services/UserAndPubAuthService/UserManagementService.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Services/UserAndPubAuthService/UserManagementService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Controllers/AdminControllers/CustomerManagementController.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Controllers/AdminControllers/CustomerManagementController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Models/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Models/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Services/AdminService/AdminAuthService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Services/AdminService/CustomerManagementService.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Services/AdminService/CustomerManagementService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
