@@ -28,10 +28,10 @@ public class AccessController {
     @Autowired
     private ProviderAuthService providerAuthService;
 
-/*
-Ahmed
-login, logout
-*/
+    /*
+     * Ahmed
+     * login, logout
+     */
     @PostMapping("/login")
     public ResponseEntity<ApiResponse<LoginResponse>> login(@RequestBody LoginRequest request) {
         try {
@@ -59,11 +59,11 @@ login, logout
         }
     }
 
-/*
-Maya
-Epic 1:
-POST signup/customer
-*/
+    /*
+     * Maya
+     * Epic 1:
+     * POST signup/customer
+     */
     @PostMapping("/signup/customer")
     public ResponseEntity<ApiResponse<String>> signupCustomer(@RequestBody Customer request) {
         boolean success = authService.signupCustomer(request);
@@ -74,10 +74,10 @@ POST signup/customer
         }
     }
 
-/*
-Kareem
-•Epic 1:	signup provider
- */
+    /*
+     * Kareem
+     * •Epic 1: signup provider
+     */
 
     @PostMapping("/signup/provider")
     public ResponseEntity<String> signupProvider(@RequestBody ProviderSignupRequestDTO request) {
