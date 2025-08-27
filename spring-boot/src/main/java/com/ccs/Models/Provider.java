@@ -7,10 +7,21 @@ import lombok.*;
 @NoArgsConstructor
 @Entity
 @Table(name = "providers")
-public class Provider extends User {
+public class Provider extends User
+{
+    public enum EnableStatus { ENABLED, DISABLED }
+    public enum ApprovalStatus { PENDING, APPROVED, REJECTED }
 
-    @Column(name = "verification_status")
-    private String verificationStatus;
+    @Enumerated(EnumType.STRING)
+    @Column(name = "enable_status")
+    private EnableStatus enableStatus = EnableStatus.DISABLED; //default
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "approval_status")
+    private ApprovalStatus approvalStatus = ApprovalStatus.PENDING; //default
+
+//    @Column(name = "verification_status")
+//    private String verificationStatus;
 
     @Column(name = "location_lat")
     private Float locationLat;
@@ -21,8 +32,9 @@ public class Provider extends User {
     @Column(name = "national_id_image")
     private String nationalIdImage;
 
-    public Provider(String username, String password, String email, String phone,
-                    String verificationStatus, Float locationLat, Float locationLong, String nationalIdImage) {
+    public Provider(String username, String password, String email, String phone
+                    /*String verificationStatus*/, Float locationLat, Float locationLong, String nationalIdImage)
+    {
         super();
         setUsername(username);
         setPassword(password);
@@ -30,9 +42,11 @@ public class Provider extends User {
         setPhone(phone);
         setRole(Role.ROLE_PROVIDER);
 
-        this.verificationStatus = verificationStatus;
+//        this.verificationStatus = verificationStatus;
         this.locationLat = locationLat;
         this.locationLong = locationLong;
         this.nationalIdImage = nationalIdImage;
+        this.enableStatus = EnableStatus.DISABLED;
+        this.approvalStatus = ApprovalStatus.PENDING;
     }
 }

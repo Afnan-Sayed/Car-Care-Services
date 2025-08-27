@@ -43,6 +43,12 @@ public class SecurityConfig {
                 .requestMatchers(HttpMethod.PUT, "/services").hasRole("ADMIN")
                 .requestMatchers(HttpMethod.POST, "/admin/customers/{id}/enable").hasRole("ADMIN")
                 .requestMatchers(HttpMethod.POST, "/admin/customers/{id}/disable").hasRole("ADMIN")
+                .requestMatchers(HttpMethod.POST, "/admin/providers/{id}/enable").hasRole("ADMIN")
+                .requestMatchers(HttpMethod.POST, "/admin/providers/{id}/disable").hasRole("ADMIN")
+                .requestMatchers(HttpMethod.POST, "/admin/providers/{id}/approve").hasRole("ADMIN")
+                .requestMatchers(HttpMethod.POST, "/admin/providers/{id}/reject").hasRole("ADMIN")
+                .requestMatchers(HttpMethod.POST, "/admin/providers/pending").hasRole("ADMIN")
+                .requestMatchers(HttpMethod.POST, "/admin/providers/{id}/verify").hasRole("ADMIN")
                 .anyRequest().authenticated()
             )
             .sessionManagement(session -> session

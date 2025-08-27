@@ -24,30 +24,41 @@ Epic 5: Admin APIs
 /// /////////////////////////
 
 @RestController
-@RequestMapping("/admin")
-public class ProviderManagementController {
-
+@RequestMapping("/admin/providers")
+public class ProviderManagementController
+{
     @Autowired
     private ProviderManagementService providerManagementService;
 
-    @PostMapping("/providers/{id}/enable")
-    public ResponseEntity<String> enableCustomer(@PathVariable Long id) {
+    @PostMapping("/{id}/enable")
+    public ResponseEntity<String> enableProvider(@PathVariable Long id) {
         return providerManagementService.enableProvider(id);
     }
 
-    @PostMapping("/providers/{id}/disable")
-    public ResponseEntity<String> disableCustomer(@PathVariable Long id) {
+    @PostMapping("/{id}/disable")
+    public ResponseEntity<String> disableProvider(@PathVariable Long id) {
         return providerManagementService.disableProvider(id);
     }
 
-    @PostMapping("/providers/{id}/approve")
-    public ResponseEntity<String> approveCustomer(@PathVariable Long id) {
+    @PostMapping("/{id}/approve")
+    public ResponseEntity<String> approveProvider(@PathVariable Long id) {
         return providerManagementService.approveProvider(id);
     }
 
-    @PostMapping("/providers/{id}/reject")
-    public ResponseEntity<String> rejectCustomer(@PathVariable Long id) {
+    @PostMapping("/{id}/reject")
+    public ResponseEntity<String> rejectProvider(@PathVariable Long id) {
         return providerManagementService.rejectProvider(id);
     }
 
+    // GET /admin/providers/pending
+    @GetMapping("/pending")
+    public ResponseEntity<?> viewPendingProviders() {
+        return providerManagementService.viewPendingProviders();
+    }
+
+    // PUT /admin/providers/{id}/verify
+    @PutMapping("/{id}/verify")
+    public ResponseEntity<?> verifyProvider(@PathVariable Long id) {
+        return providerManagementService.verifyProvider(id);
+    }
 }
