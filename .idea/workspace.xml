@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc88ddee-34b9-4536-8e43-5ebeb777f8be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-boot/src/main/resources/data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/CarCareServicesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/CarCareServicesApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Services/UserAndPubAuthService/PasswordResetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/java/com/ccs/Services/UserAndPubAuthService/PasswordResetService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Models/User$Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Models/User$Role.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Repository/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Services/UserAndPubAuthService/PasswordResetService.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot/target/classes/com/ccs/Services/UserAndPubAuthService/PasswordResetService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +20,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="admin-management" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -60,7 +54,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "test-supcust-jwt-access",
+    "git-widget-placeholder": "admin-management",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
@@ -86,7 +80,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/test-supcust-jwt-access" />
+                        <option value="origin/Services" />
                       </list>
                     </value>
                   </entry>
