@@ -44,5 +44,4 @@ Epic 5:
     public ResponseEntity<String> disableCustomer(@PathVariable Long id) {
         return customerManagementService.disableCustomer(id);
     }
-
 }
