@@ -12,17 +12,15 @@ public class Provider extends User {
     @Column(name = "verification_status")
     private String verificationStatus;
 
-    @Column(name = "location_lat")
-    private Float locationLat;
-
-    @Column(name = "location_long")
-    private Float locationLong;
+    @Embedded
+    @Column( name = "location" )
+    private Location location;
 
     @Column(name = "national_id_image")
     private String nationalIdImage;
 
     public Provider(String username, String password, String email, String phone,
-                    String verificationStatus, Float locationLat, Float locationLong, String nationalIdImage) {
+                    String verificationStatus, Double latitude, Double longitude, String nationalIdImage) {
         super();
         setUsername(username);
         setPassword(password);
@@ -31,8 +29,7 @@ public class Provider extends User {
         setRole(Role.ROLE_PROVIDER);
 
         this.verificationStatus = verificationStatus;
-        this.locationLat = locationLat;
-        this.locationLong = locationLong;
+        this.location = new Location(latitude, longitude);
         this.nationalIdImage = nationalIdImage;
     }
 }

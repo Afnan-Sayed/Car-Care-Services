@@ -1,5 +1,6 @@
 package com.ccs.Services.ProviderService;
 
+import com.ccs.Models.Location;
 import com.ccs.Models.Provider;
 import com.ccs.Models.DTOs.ProviderSignupRequestDTO;
 import com.ccs.Repository.ProviderRepository;
@@ -29,8 +30,7 @@ public class ProviderService {
         provider.setPassword(providerDetails.getPassword());
         provider.setEmail(providerDetails.getEmail());
         provider.setPhone(providerDetails.getPhone());
-        provider.setLocationLat(providerDetails.getLocationLat());
-        provider.setLocationLong(providerDetails.getLocationLong());
+        provider.setLocation(new Location(providerDetails.getLocationLat(),providerDetails.getLocationLong()));
         provider.setNationalIdImage(providerDetails.getNationalIdImage());
         return providerRepository.save(provider);
     }

@@ -1,5 +1,6 @@
 package com.ccs.Services.ProviderService;
 
+import com.ccs.Models.Location;
 import com.ccs.Models.Provider;
 import com.ccs.Models.User;
 import com.ccs.Models.DTOs.ProviderSignupRequestDTO;
@@ -51,8 +52,7 @@ public class ProviderAuthService {
 
         // Set provider-specific fields
         provider.setVerificationStatus("PENDING");
-        provider.setLocationLat(request.getLocationLat());
-        provider.setLocationLong(request.getLocationLong());
+        provider.setLocation(new Location(request.getLocationLat(),request.getLocationLong()));
         provider.setNationalIdImage(request.getNationalIdImage());
 
         // Save

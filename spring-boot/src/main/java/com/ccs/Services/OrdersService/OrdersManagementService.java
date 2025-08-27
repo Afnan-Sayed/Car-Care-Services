@@ -9,15 +9,9 @@ Epic 7: Orders APIs
 •	GET /orders/history
  */
 
-import com.ccs.Models.Car;
-import com.ccs.Models.Customer;
+import com.ccs.Models.*;
 import com.ccs.Models.DTOs.OrderCreateRequest;
-import com.ccs.Models.Location;
-import com.ccs.Models.Order;
-import com.ccs.Repository.CustomerRepo;
-import com.ccs.Repository.OrdersRepo;
-import com.ccs.Repository.ProviderRepository;
-import com.ccs.Repository.ServicesRepo;
+import com.ccs.Repository.*;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -30,6 +24,7 @@ import java.util.List;
 public class OrdersManagementService {
     private final OrdersRepo ordersRepo;
     private final CustomerRepo customerRepo;
+    private final ServiceDetailsRepository serviceDetailsRepository;
 
     public Order createOrder(Long customerId, OrderCreateRequest request) {
         Customer customer = customerRepo.findById(customerId)
@@ -38,17 +33,15 @@ public class OrdersManagementService {
 //        Car car = Car.findById(request.getCarId())
 //                .orElseThrow(() -> new EntityNotFoundException("Car not found"));
 
-//        Service service = ServicesRepo.findById(request.getServiceId())
-//                .orElseThrow(() -> new EntityNotFoundException("Service not found"));
+        ServiceDetails serviceDetail = serviceDetailsRepository.findById(request.getServiceDetailId())
+                .orElseThrow(() -> new EntityNotFoundException("Service detail not found"));
 
         Order order = new Order();
         order.setCustomer(customer);
 //        order.setCar(car);
-//        order.setService(service);
+        order.setServiceDetail(serviceDetail);
         order.setLocation(new Location(request.getLatitude(), request.getLongitude()));
         order.setStatus(Order.Status.STATUS_INITIATED);
-        order.setCreatedAt(LocalDateTime.now());
-        order.setUpdatedAt(LocalDateTime.now());
 
         return ordersRepo.save(order);
     }

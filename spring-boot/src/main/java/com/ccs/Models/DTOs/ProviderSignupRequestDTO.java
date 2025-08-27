@@ -8,8 +8,8 @@ public class ProviderSignupRequestDTO {
     private String password;
     private String email;
     private String phone;
-    private Float locationLat;
-    private Float locationLong;
+    private Double locationLat;
+    private Double locationLong;
     private String nationalIdImage;
 
 }

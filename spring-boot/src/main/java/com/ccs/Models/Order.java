@@ -11,6 +11,8 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
 import java.time.LocalDateTime;
 
@@ -34,16 +36,16 @@ public class Order {
     private Customer customer;
 
     @ManyToOne
+    @JoinColumn(name = "service_detail_id", nullable = false)
+    private ServiceDetails serviceDetail;
+
+    @ManyToOne
     @JoinColumn(name = "provider_id")
     private Provider provider;
 
-    @ManyToOne
-    @JoinColumn(name = "car_id", nullable = false)
-    private Car car;
-
-    @ManyToOne
-    @JoinColumn(name = "service_id", nullable = false)
-    private Service service;
+//    @ManyToOne
+//    @JoinColumn(name = "car", nullable = false)
+//    private Car car;
 
     @Column(nullable = false)
     @Enumerated(EnumType.STRING)
@@ -53,9 +55,11 @@ public class Order {
     @Column( name = "location" )
     private Location location;
 
-    @Column(name = "created_at")
+    @CreationTimestamp
+    @Column(name = "created_at", nullable = false, updatable = false)
     private LocalDateTime createdAt;
 
+    @UpdateTimestamp
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
 }

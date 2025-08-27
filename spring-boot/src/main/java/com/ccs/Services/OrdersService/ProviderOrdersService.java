@@ -8,8 +8,10 @@ Epic 7: Orders APIs
 
 import com.ccs.Models.Order;
 import com.ccs.Models.Provider;
+import com.ccs.Models.ServiceDetails;
 import com.ccs.Repository.OrdersRepo;
 import com.ccs.Repository.ProviderRepository;
+import com.ccs.Repository.ServiceDetailsRepository;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -22,6 +24,7 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class ProviderOrdersService {
     private final ProviderRepository providerRepository;
+    private final ServiceDetailsRepository serviceDetailsRepository;
     private final OrdersRepo ordersRepo;
 
     public List<Order> getOrdersByProvider(Long providerId) {
@@ -68,15 +71,16 @@ public class ProviderOrdersService {
         Provider provider = providerRepository.findById(providerId)
                 .orElseThrow(() -> new EntityNotFoundException("Provider not found"));
 
-        double providerLat = provider.getLocationLat();
-        double providerLon = provider.getLocationLong();
+        List<ServiceDetails> providerServices = serviceDetailsRepository.findByProviderId(providerId);
 
         List<Order> unassignedOrders = ordersRepo
                 .findByProviderIsNullAndStatus(Order.Status.STATUS_INITIATED);
 
         return unassignedOrders.stream()
+                .filter(order -> providerServices.contains(order.getServiceDetail()))
                 .filter(order -> {
-                    double dist = haversine(providerLat, providerLon,
+                    double dist = haversine(provider.getLocation().getLatitude(),
+                            provider.getLocation().getLongitude(),
                             order.getLocation().getLatitude(),
                             order.getLocation().getLongitude());
                     return dist <= 15000; // 15 km in meters

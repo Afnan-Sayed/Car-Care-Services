@@ -20,9 +20,9 @@ public class Notification {
     @JoinColumn(name = "user_id", referencedColumnName = "id")
     private User user;
 
-//    @ManyToOne
-//    @JoinColumn(name = "order_id", referencedColumnName = "id", nullable = true)
-//    private Order order;
+    @ManyToOne
+    @JoinColumn(name = "order_id", referencedColumnName = "id", nullable = true)
+    private Order order;
 
     private String message;
 
