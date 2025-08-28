@@ -24,21 +24,22 @@ import java.util.List;
 public class OrdersManagementService {
     private final OrdersRepo ordersRepo;
     private final CustomerRepo customerRepo;
+    private final CarRepo carRepository;
     private final ServiceDetailsRepository serviceDetailsRepository;
 
     public Order createOrder(Long customerId, OrderCreateRequest request) {
         Customer customer = customerRepo.findById(customerId)
                 .orElseThrow(() -> new EntityNotFoundException("Customer not found"));
 
-//        Car car = Car.findById(request.getCarId())
-//                .orElseThrow(() -> new EntityNotFoundException("Car not found"));
+        Car car = carRepository.findById(request.getCarId())
+                .orElseThrow(() -> new EntityNotFoundException("Car not found"));
 
         ServiceDetails serviceDetail = serviceDetailsRepository.findById(request.getServiceDetailId())
                 .orElseThrow(() -> new EntityNotFoundException("Service detail not found"));
 
         Order order = new Order();
         order.setCustomer(customer);
-//        order.setCar(car);
+        order.setCar(car);
         order.setServiceDetail(serviceDetail);
         order.setLocation(new Location(request.getLatitude(), request.getLongitude()));
         order.setStatus(Order.Status.STATUS_INITIATED);
@@ -51,13 +52,13 @@ public class OrdersManagementService {
                 .orElseThrow(() -> new EntityNotFoundException("Order not found"));
     }
 
-//    public Order updateOrder(Long id, Order updatedOrder) {
-//        Order order = getOrderById(id);
-//        order.setStatus(updatedOrder.getStatus());
-//        order.setProvider(updatedOrder.getProvider());
-//        order.setUpdatedAt(LocalDateTime.now());
-//        return ordersRepo.save(order);
-//    }
+    public Order updateOrder(Long id, Order updatedOrder) {
+        Order order = getOrderById(id);
+        order.setStatus(updatedOrder.getStatus());
+        order.setProvider(updatedOrder.getProvider());
+        order.setUpdatedAt(LocalDateTime.now());
+        return ordersRepo.save(order);
+    }
 
     public void deleteOrder(Long id, Long customerId) {
         Order order = ordersRepo.findById(id)

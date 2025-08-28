@@ -43,9 +43,9 @@ public class Order {
     @JoinColumn(name = "provider_id")
     private Provider provider;
 
-//    @ManyToOne
-//    @JoinColumn(name = "car", nullable = false)
-//    private Car car;
+    @ManyToOne
+    @JoinColumn(name = "car", nullable = false)
+    private Car car;
 
     @Column(nullable = false)
     @Enumerated(EnumType.STRING)
