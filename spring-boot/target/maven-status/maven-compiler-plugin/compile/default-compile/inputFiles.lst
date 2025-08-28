@@ -9,6 +9,7 @@ C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\
 C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\Controllers\AuthControllers\GeneralUserAuth\PasswordResetController.java
 C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\Controllers\AuthControllers\UserCRUDController.java
 C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\Controllers\CustomerControllers\CustomerCarsController.java
+C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\Controllers\EnquiryControllers\EnquiryController.java
 C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\Controllers\NotificationsControllers\NotificationsController.java
 C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\Controllers\OrdersControllers\CustomerOrdersController.java
 C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\Controllers\OrdersControllers\OrdersManagementController.java
@@ -24,6 +25,7 @@ C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\
 C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\Models\CarType.java
 C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\Models\Customer.java
 C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\Models\CustomUserDetails.java
+C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\Models\DTOs\EnquiryRequest.java
 C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\Models\DTOs\ForgotPasswordRequest.java
 C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\Models\DTOs\OrderCreateRequest.java
 C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\Models\DTOs\ProviderSignupRequestDTO.java
@@ -45,6 +47,7 @@ C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\
 C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\Models\User.java
 C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\Repository\AdminRepo.java
 C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\Repository\CustomerRepo.java
+C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\Repository\EnquiryRepo.java
 C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\Repository\NotificationsRepo.java
 C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\Repository\OrdersRepo.java
 C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\Repository\PasswordResetTokenRepository.java
@@ -60,6 +63,7 @@ C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\
 C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\Services\AdminService\ProviderManagementService.java
 C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\Services\CustomerService\CustomerAuthService.java
 C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\Services\CustomerService\CustomerCarsService.java
+C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\Services\EnquiryService\EnquiryService.java
 C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\Services\NotificationService\NotificationService.java
 C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\Services\OrdersService\CustomerOrdersService.java
 C:\Users\ahmedsabry\Desktop\Car-Care-Services\spring-boot\src\main\java\com\ccs\Services\OrdersService\OrdersManagementService.java
