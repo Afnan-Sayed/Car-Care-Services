@@ -33,6 +33,7 @@ public class SecurityConfig {
                 .requestMatchers("/auth/signup/**").permitAll()
                 .requestMatchers("/auth/logout").authenticated()
                 .requestMatchers("/customer/**").hasRole("CUSTOMER")
+                .requestMatchers("/payments/**").hasRole("CUSTOMER")
                 .requestMatchers("/provider/**").hasRole("PROVIDER")
                 .requestMatchers("/admin/**").hasRole("ADMIN")
                 .requestMatchers("/user/**").hasAnyRole("CUSTOMER", "PROVIDER", "ADMIN")

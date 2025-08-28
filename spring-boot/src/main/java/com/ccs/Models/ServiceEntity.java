@@ -1,7 +1,7 @@
 package com.ccs.Models;
 /*
 id, name (Wash, Tow, Battery…), description, base_price,
-pricing_type (fixed / per_km / per_car_type), created_at, updated_at
+carType, created_at, updated_at
  */
 
 
@@ -24,20 +24,25 @@ import lombok.*;
 @Inheritance(strategy = InheritanceType.JOINED)
 public class ServiceEntity {
 
-    public enum PricingType {
-        FIXED, PER_KM, PER_CAR_TYPE
+    public enum CarType {
+        PRIVATE_CAR, BUS, TRUCK, MOTORCYCLE
     }
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(nullable = false, unique = true)
     private String name;
+
+    @Column(nullable = false)
     private String description;
-    private Double basePrice;
+
+    @Column(nullable = false)
+    private Double price;
 
     @Enumerated(EnumType.STRING)
-    private PricingType pricingType;
+    private CarType carType;
 
     @CreatedDate
     @Column(updatable = false, nullable = false)

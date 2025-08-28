@@ -31,9 +31,6 @@ public class ServicesManagementService {
         if (servicesRepo.findByName(service.getName()) != null) {
             throw new RuntimeException("Service with the same name already exists");
         }
-        if (service.getPricingType() == null) {
-            throw new IllegalArgumentException("pricingType must be one of: FIXED, PER_KM, PER_CAR_TYPE");
-        }
         return servicesRepo.save(service);
     }
 
@@ -53,14 +50,14 @@ public class ServicesManagementService {
             throw new IllegalArgumentException("Service with name " + service.getName() + " already exists");
         }
         service.setId(id);
-        if(service.getBasePrice() != null) service.setBasePrice(service.getBasePrice());
-        else service.setBasePrice(existingServiceOpt.get().getBasePrice());
+        if(service.getPrice() != null) service.setPrice(service.getPrice());
+        else service.setPrice(existingServiceOpt.get().getPrice());
         if(service.getName() != null) service.setName(service.getName());
         else service.setName(existingServiceOpt.get().getName());
         if(service.getDescription() != null) service.setDescription(service.getDescription());
         else service.setDescription(existingServiceOpt.get().getDescription());
-        if(service.getPricingType() != null) service.setPricingType(service.getPricingType());
-        else service.setPricingType(existingServiceOpt.get().getPricingType());
+        if(service.getCarType() != null) service.setCarType(service.getCarType());
+        else service.setCarType(existingServiceOpt.get().getCarType());
         return servicesRepo.save(service);
     }
 
