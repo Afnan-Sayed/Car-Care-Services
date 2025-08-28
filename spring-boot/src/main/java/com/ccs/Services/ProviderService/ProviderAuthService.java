@@ -50,8 +50,11 @@ public class ProviderAuthService {
         provider.setPhone(request.getPhone());
         provider.setRole(User.Role.ROLE_PROVIDER);
 
+        provider.setEnableStatus(Provider.EnableStatus.DISABLED);
+        provider.setApprovalStatus(Provider.ApprovalStatus.PENDING);
+
         // Set provider-specific fields
-        provider.setVerificationStatus("PENDING");
+   //     provider.setVerificationStatus("PENDING");
         provider.setLocation(new Location(request.getLocationLat(),request.getLocationLong()));
         provider.setNationalIdImage(request.getNationalIdImage());
 
