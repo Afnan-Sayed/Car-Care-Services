@@ -60,7 +60,7 @@ public class OrdersManagementService {
         return ordersRepo.save(order);
     }
 
-    public void deleteOrder(Long id, Long customerId) {
+    public void deleteOrder(Long customerId, Long id) {
         Order order = ordersRepo.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException("Order not found"));
 
@@ -82,3 +82,4 @@ public class OrdersManagementService {
                 .toList();
     }
 }
+
