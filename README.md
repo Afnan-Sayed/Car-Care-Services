@@ -19,15 +19,13 @@ It leverages **RESTful APIs**, **role-based security (JWT)**, and **database per
 
 ## Team Contributions
 
-## 👩‍💻 Team Contributions
-
 | Member   | Responsibilities |
 |----------|------------------|
-| **Afnan** | Developed **Admin Management** (provider approval/rejection, enable/disable users), and implemented **Reset Password**, **hardcoded Admins**, plus overall **project initialization and structure**. |
-| **Maya** | Contributed to **Admin Management** (admin profiles, service prices), **Service Management** (CRUD operations), **Payment Management**, and **Customer Signup**. |
-| **Noureldin** | Responsible for **Orders Management** (create, update, cancel orders, history, nearby providers, reviews). |
-| **Ahmed** | Worked on **User Management** (admin manage user profiles), **Customer Management** (cars, customer details), and **Settings & Enquiries** modules. |
-| **Kareem** | Implemented **Provider Management** (provider profile, provider services), **Notifications**, and also handled **Provider Signup**. |
+| [**Afnan**](https://github.com/Afnan-Sayed) | Developed **Admin Management** (provider approval/rejection, enable/disable users), and implemented **Reset Password**, **hardcoded Admins**, plus overall **project initialization and structure**. |
+| [**Maya**](https://github.com/mayafouad) | Contributed to **Admin Management** (admin profiles, service prices), **Service Management** (CRUD operations), **Payment Management**, and **Customer Signup**. |
+| [**Noureldin**](https://github.com/NORO-01) | Responsible for **Orders Management** (create, update, cancel orders, history, nearby providers, reviews). |
+| [**Ahmed**](https://github.com/asabry18) | Worked on **User Management** (admin manage user profiles), **Customer Management** (cars, customer details), and **Settings & Enquiries** modules. |
+| [**Kareem**](https://github.com/kareeem74) | Implemented **Provider Management** (provider profile, provider services), **Notifications**, and also handled **Provider Signup**. |
 
 ---
 
