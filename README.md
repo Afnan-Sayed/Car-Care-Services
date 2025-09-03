@@ -188,7 +188,8 @@ spring.datasource.username=yourMySQLUsername
 spring.datasource.password=yourMySQLPassword
 spring.jpa.hibernate.ddl-auto=update
 ```
-# Add JWT secret and other configs as needed
+Add JWT secret and other configs as needed
+
 4. Build the Project
 ``` mvn clean install ```
 
