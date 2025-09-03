@@ -31,7 +31,7 @@ It leverages **RESTful APIs**, **role-based security (JWT)**, and **database per
 - **Password Reset**: Forgot password, verify token, reset password  
 - **Profile Updates**: Edit details like phone or location  
 
-### 2. 🚘 Customer Features
+### 2. Customer Features
 - Manage Cars: Add/update/remove cars (type, license)  
 - Request Services: Select service (wash, tow, etc.) for a car, view cost estimation, submit with location  
 - Track Orders: View status, history, and rate/review completed requests  
