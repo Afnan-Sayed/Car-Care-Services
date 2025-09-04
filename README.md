@@ -188,15 +188,23 @@ spring.datasource.username=yourMySQLUsername
 spring.datasource.password=yourMySQLPassword
 spring.jpa.hibernate.ddl-auto=update
 ```
-# Add JWT secret and other configs as needed
+Add JWT secret and other configs as needed
+
 4. Build the Project
-``` mvn clean install ```
+```
+ mvn clean install
+```
 
 6. Run the Application
-``` mvn spring-boot:run ```
+```
+mvn spring-boot:run
+```
 
-7. Access the App
-The backend runs at: ``` http://localhost:8080 ```
+8. Access the App
+The backend runs at:
+```
+ http://localhost:8080
+```
 
-8. Test the APIs
+10. Test the APIs
 Import ``` CCS.postman_collection.json ``` into Postman and use the provided request bodies and parameters.
